@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>matrix</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="matrix.css">
+	<script type="application/javascript" src="matrix.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="m">
+			<div class="ligne 1">
+				<input type="number" min = "0" max = "3" name="indice 11" class = "mat1">
+				<select class = "mat1" name="signe">
+					<option value="|">|</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<input type="number" min = "0" max = "3" name="indice 12" class = "mat1">
+				<select class = "mat1" name="signe">
+					<option value="|">|</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<input type="number" min = "0" max = "3" name="indice 13" class = "mat1">
+			</div>
+			<div class="signe bas 1">
+				<select name="signe" class="mat1">
+					<option value="-">-</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<select class = "mat1" name="signe">
+					<option value="-">-</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<select class = "mat1" name="signe">
+					<option value="-">-</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+			</div>
+			<div class="ligne 2">
+				<input type="number" min = "0" max = "3" name="indice 21" class = "mat1">
+				<select class = "mat1" name="signe">
+					<option value="|">|</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<input type="number" min = "0" max = "3" name="indice 22" class = "mat1">
+				<select class = "mat1" name="signe">
+					<option value="|">|</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<input type="number" min = "0" max = "3" name="indice 23" class = "mat1">
+			</div>
+			<div class="signe bas 2">
+				<select class = "mat1" name="signe">
+					<option value="-">-</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<select class = "mat1" name="signe">
+					<option value="-">-</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<select class = "mat1" name="signe">
+					<option value="-">-</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+			</div>
+			<div class="ligne 3">
+				<input type="number" min = "0" max = "3" name="indice 31" class = "mat1">
+				<select class = "mat1" name="signe">
+					<option value="|">|</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<input type="number" min = "0" max = "3" name="indice 32" class = "mat1">
+				<select class = "mat1" name="signe">
+					<option value="|">|</option>
+					<option value="&lt;">&lt;</option>
+					<option value=">">></option>
+				</select>
+				<input type="number" min = "0" max = "3" name="indice 33" class = "mat1">
+			</div>
+		</div>
+		<div class="taille">
+			<label>dimension</label><input type="number" id="dim">
+			<label>titre</label><input type="text" id="titre">
+		</div>
+		<input type="button" value="entrer" onclick="affichage()">
+	</div>
+	<div id="bouton">
+		<input type="button" value="envoyer" onclick="envoyer()">
+	</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+body
+{
+	background-color: #cbf3c0;
+}
+
+#container
+{
+	background-color: #c3f8b1;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px grey;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+
+input[type="number"]
+{
+	background-color: #c3f8b1;
+	width: 5vw;
+	height: 5vh;
+}
+
+input[type="text"]
+{
+	background-color: #c3f8b1;
+	width: 1vw;
+	height: 5vh;
+}
+
+select
+{
+	background-color: #c3f8b1;
+	width: 2vw;
+	height: 5vh;
+}
+
+input[name="signe"]
+{
+	background-color: #c3f8b1;
+	width: 6vw;
+	height: 2vh;
+}
+
+.signe input[type="text"]
+{
+	background-color: #c3f8b1;
+	width: 7vw;
+	height: 2vh;
+}
+
+.signe select
+{
+	background-color: #c3f8b1;
+	width: 7vw;
+	height: 2vh;
+}
+
+#bouton
+{
+	background-color: #c3f8b1;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px grey;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#rep
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#para
+{
+	background-color: #c3f8b1;
+	border: 1px solid grey;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px grey;
+	padding-top: 2vh;
+	padding-left: 1vw;
+	width: min-content;
+	margin-top: 15vh;
+	font-size: 2rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lign
+{
+	display: flex;
+	flex-direction: row;
+}
+
+.pos
+{
+	width: 5vw;
+	margin-right: 1vw;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+}
+
+.taille
+{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px grey;
+	width: 8vw;
+	padding-left: 2vw;
+	margin-bottom: 15vh;
+}
+
+.taille input
+{
+	height: auto;
+	width: auto;
+}
+
+.ligne
+{
+	box-shadow: 5px 5px 5px #a8c6bb;
+}
+
+input[type="button"]
+{
+	background-color: #c3f8b1;
+	box-shadow: 2px 2px 2px grey;
+	font-size: 1.5rem;
+}
+
