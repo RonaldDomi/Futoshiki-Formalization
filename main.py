@@ -3,7 +3,7 @@ from screen_utils import *
 # from process import Inputs
 
 os.environ['SDL_VIDEO_CENTERED'] = '1'
-pygame.display.set_caption("Hello World")
+pygame.display.set_caption("Futoshiki Solver")
 pygame.init()
 
 colors = {

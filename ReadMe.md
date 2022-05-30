@@ -1,44 +1,29 @@
-I will suppose the system used for this ReadMe is Windows
-
-you need to have python installed, and to have pip installed.
-to install pip you need to follow these instructions:
-https://pip.pypa.io/en/stable/installation/
-
-once pip is installed:
+To run this program you will need pip installed to then:
 pip install pygame
 pip install z3-solver
 pip install tk
 
-to run the graphical interface run main.py using python
+The main program is a graphical interface.
+The goal of the program is to facilitate the creation and resolution of Futoshiki puzzles. 
 
-py main.py on Windows
-you can press exit to quit any time
+The creation of the puzzle is /Creator/matrix.html.
+The solution of the puzzle will be the main python program.
 
-configurations folder holds all the files used as entry for the solver
-Dimacs is a intermediate file which holds the list of clauses for the current configuration file
-Solutions are in the same file as Configurations, but end with _solved.txt. Configuration with 
-no solution don't get saved to a file.
+The solution will be saved in the same folder as where you loaded it on the program, and it will be named 
+with a _solution prefix.
 
-a configuration file has a dimmensions number at the start, if the dimmensions doesn't correspond 
-to the file, than it will be completed with 0s.
-
-Note: if you import a config file into the graphical interface, the focus won't be on the game so you might 
-need to click once more to solve the board.
-
-
-#-- Important
 It is recommended to use the graphical interface only to view the solution of boards untill 4x4. If 
-the board gets 5x5 or bigger than there will be a problem. The UI is not responsive, and to view it 
-you need to change the width/height of the screen on main.py line 20 and base_solved_table_y on line 43
+the board gets 5x5 or bigger than there will be a problem, the UI is not responsive. In this case it 
+is recommended to have a look at the solutions text file.
 
-#-- Creator
 To create a config file you can use the page html/javascript on the Creator folder. 
-Double click on the html page to open the creator.
 It has a placeholder of 3x3, you can enter a new dimmension and then click enter to update the table input.
 You may enter the numbers, and then click "envoyer" to save it. If you haven't specified a name on the input 
 field it is saved by default with "download.txt"
 
+The Configurations folder comes with some configuration examples, which could be imported directly and then solved.
 
-Te Configurations folder comes with some configuration examples, which could be imported directly and then solved.
-If the file is empty or partially completed, it will still work and suppose that the missing data is empty.
-If the file contains more data than expected, than it will only take care of what it is supposed to see.
+
+![Image of solution text file created by the program](/documents/6x6.png "solution.txt")
+![Image of Futoshiki puzzles creator](/documents/creator.png "Creator of Futoshiki puzzles")
+![Image of the graphical interface with solution](/documents/Futoshiki_Solver.png "Graphical interface solution of 4x4")

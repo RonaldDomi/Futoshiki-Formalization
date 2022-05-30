@@ -108,7 +108,7 @@ def draw_single_arrow(screen, start_cell, direction, base_table_x, base_table_y)
     str_x = base_table_x + (cell_column)*cell_width
     str_y = base_table_y + (cell_row)*cell_width
     
-    arrow = pygame.image.load("./pixil-frame-0.png")
+    arrow = pygame.image.load("./documents/pixil-frame-0.png")
     arrow_padding_x = 10
     arrow_padding_y = 15
     if direction == 'up':
@@ -223,9 +223,9 @@ def text_to_configuration(file):
 def solve(screen, board_config, input_file):
     # input_file with .txt 
     output_solved = input_file.replace(".txt", "_solved.txt")
-    output_dimacs = 'conf_1.dimacs'
+    output_dimacs = 'configuration.dimacs'
     create_dimacs(board_config, output_dimacs)
-    solved_config = model_to_configuration("./Dimacs/" +output_dimacs)
+    solved_config = model_to_configuration(output_dimacs)
     if solved_config == "Error":
         # no_model(screen)
         return board_config
@@ -292,7 +292,7 @@ def import_file():
 
 def create_dimacs(board_config, output_file):
 
-    f = open('./Dimacs/' + output_file, 'w')
+    f = open(output_file, 'w')
     n = board_config["table_dimmensions"]
     
     # each number at least once per ligne
@@ -412,11 +412,3 @@ def model_to_configuration(file):
 
     # print(config_board)
     return config_board
-
-# solved_config = model_to_configuration("./Dimacs/conf_1.dimacs")
-
-# model_to_configuration("./Dimacs/conf_1.dimacs")
-# board_config = text_to_configuration("./configurations/conf_1.txt")
-# create_dimacs(board_config, ".conf_2_output.txt")
-
-# model_to_configuration('./Dimacs/conf_1.dimacs')
